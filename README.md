@@ -67,26 +67,9 @@ python3 -m http.server 8000
  
 ## Deployment
  
-The site is hosted on **GitHub Pages**. To deploy your own copy:
- 
-1. Push the project to a GitHub repository.
-2. Go to **Settings → Pages**.
-3. Under **Source**, choose the `main` branch and the root folder.
-4. Save. The site will be live at `https://<username>.github.io/<repo-name>/`.
-## Adding New Photos
- 
-1. Add the image file to the appropriate folder inside `images/`.
-2. Add a new gallery entry in `index.html` with a title, category, short caption and descriptive alt text.
-3. Update the category counts in the filter buttons.
-4. Commit and push; GitHub Pages will redeploy automatically.
-Tip: compress images (for example with Squoosh or TinyPNG) before adding them, to keep page loads fast.
+The site is hosted on **GitHub Pages**
  
 ## Connect
  
 - **Instagram:** [@kp_lenzz](https://www.instagram.com/kp_lenzz/)
-- **Behance:** [krishnaachanta1](https://www.behance.net/krishnaachanta1)
-## License & Copyright
- 
-All photographs © Krishna Pranav. All rights reserved. Images may not be copied, reproduced or used without written permission.
- 
-The site code may be reused under the [MIT License](LICENSE) (add a LICENSE file if you choose this option).
+- **Behance:** [krishnaachanta1](https://www.behance.net/krishnaachanta1)  
