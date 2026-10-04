@@ -53,17 +53,6 @@ portifolioproject/
  
 No build step is needed for a static site.
  
-```bash
-# Clone the repository
-git clone https://github.com/achantakrishnapranav2/portifolioproject.git
-cd portifolioproject
- 
-# Option 1: open index.html directly in your browser
- 
-# Option 2: serve it locally
-python3 -m http.server 8000
-# then visit http://localhost:8000
-```
  
 ## Deployment
  
