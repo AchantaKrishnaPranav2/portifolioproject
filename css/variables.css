@@ -1,0 +1,182 @@
+/* ==========================================================================
+   DESIGN TOKENS — KRISHNA PRANAV PORTFOLIO
+   Theme: Warm Earthy / Botanical — Parchment, Sage, Amber, Forest
+   ========================================================================== */
+
+:root {
+
+  /* -------------------------------------------------------------------------
+     1. Colour Palette
+     ------------------------------------------------------------------------- */
+
+  /* Canvas / backgrounds */
+  --clr-canvas:       #f2ede4;    /* warm parchment white */
+  --clr-canvas-soft:  #e8e2d8;    /* slightly deeper parchment */
+  --clr-canvas-warm:  #dfd8cc;    /* warm linen */
+  --clr-surface:      #faf8f4;    /* elevated card surface */
+  --clr-surface-tint: rgba(255, 250, 242, 0.72);
+
+  /* Ink / text */
+  --clr-ink:          #1c2220;    /* deep forest ink */
+  --clr-ink-soft:     #3d4a46;    /* muted forest text */
+  --clr-ink-muted:    #7a8882;    /* placeholder / meta text */
+  --clr-ink-ghost:    #a8b4ae;    /* very faint label text */
+  --clr-ink-on-dark:  #f2ede4;    /* text on dark surfaces */
+
+  /* Accent — warm amber / earth */
+  --clr-amber:        #c8773a;    /* warm amber — primary accent */
+  --clr-amber-light:  #dfa16a;    /* hover amber */
+  --clr-amber-pale:   rgba(200, 119, 58, 0.14);
+  --clr-amber-glow:   rgba(200, 119, 58, 0.32);
+
+  /* Forest green */
+  --clr-forest:       #2e4b3e;    /* deep forest green */
+  --clr-forest-mid:   #3d6352;    /* mid green */
+  --clr-forest-pale:  rgba(46, 75, 62, 0.08);
+
+  /* Sage */
+  --clr-sage:         #7a9982;    /* sage green */
+  --clr-sage-pale:    rgba(122, 153, 130, 0.18);
+
+  /* Dark footer surface */
+  --clr-dark:         #1c2822;    /* very deep forest for footer */
+  --clr-dark-mid:     #243028;    /* slightly lighter dark */
+
+  /* Borders */
+  --clr-border:       rgba(60, 75, 65, 0.12);
+  --clr-border-warm:  rgba(200, 119, 58, 0.22);
+  --clr-border-active: #c8773a;
+
+  /* Overlays */
+  --overlay-hero: linear-gradient(
+    115deg,
+    rgba(20, 35, 28, 0.88) 0%,
+    rgba(20, 35, 28, 0.52) 55%,
+    rgba(20, 35, 28, 0.08) 100%
+  );
+  --overlay-card: linear-gradient(
+    0deg,
+    rgba(16, 28, 22, 0.92) 0%,
+    rgba(16, 28, 22, 0.62) 55%,
+    rgba(16, 28, 22, 0.00) 100%
+  );
+
+  /* Shadows */
+  --shadow-xs:  0 1px  4px rgba(28, 40, 34, 0.06);
+  --shadow-sm:  0 3px 12px rgba(28, 40, 34, 0.09);
+  --shadow-md:  0 8px 28px rgba(28, 40, 34, 0.13);
+  --shadow-lg:  0 16px 48px rgba(28, 40, 34, 0.18);
+  --shadow-xl:  0 28px 70px rgba(28, 40, 34, 0.22);
+  --shadow-amber: 0 6px 28px rgba(200, 119, 58, 0.28);
+  --shadow-card-hover: 0 20px 50px rgba(28, 40, 34, 0.20), 0 0 0 1px rgba(200, 119, 58, 0.28);
+  --shadow-neumorphic: 8px 8px 22px rgba(180, 168, 154, 0.55), -6px -6px 18px rgba(255, 255, 255, 0.80);
+
+  /* -------------------------------------------------------------------------
+     2. Typography
+     ------------------------------------------------------------------------- */
+  --font-display:   'MuseoModerno', sans-serif;
+  --font-body:      'MuseoModerno', sans-serif;
+  --font-mono:      'MuseoModerno', sans-serif;
+  --font-accent:    'MuseoModerno', sans-serif;
+
+  /* Fluid Type Scale */
+  --text-2xs:   clamp(0.6875rem, 0.65rem + 0.15vw, 0.75rem);
+  --text-xs:    clamp(0.75rem,   0.72rem + 0.15vw, 0.8125rem);
+  --text-sm:    clamp(0.8125rem, 0.78rem + 0.18vw, 0.875rem);
+  --text-base:  clamp(0.9375rem, 0.90rem + 0.22vw, 1.0rem);
+  --text-md:    clamp(1.05rem,   0.98rem + 0.35vw, 1.2rem);
+  --text-lg:    clamp(1.2rem,    1.1rem  + 0.55vw, 1.5rem);
+  --text-xl:    clamp(1.5rem,    1.3rem  + 0.9vw,  2.0rem);
+  --text-2xl:   clamp(1.9rem,    1.5rem  + 1.8vw,  2.75rem);
+  --text-3xl:   clamp(2.4rem,    1.8rem  + 2.8vw,  4.0rem);
+  --text-hero:  clamp(3.2rem,    2.2rem  + 4.5vw,  6.5rem);
+
+  /* Weights */
+  --w-light:    300;
+  --w-regular:  400;
+  --w-medium:   500;
+  --w-semibold: 600;
+  --w-bold:     700;
+  --w-black:    900;
+
+  /* Line heights */
+  --lh-none:    1;
+  --lh-tight:   1.15;
+  --lh-snug:    1.35;
+  --lh-normal:  1.65;
+  --lh-relaxed: 1.85;
+
+  /* Letter spacing */
+  --ls-tighter: -0.05em;
+  --ls-tight:   -0.025em;
+  --ls-normal:   0em;
+  --ls-wide:     0.05em;
+  --ls-wider:    0.1em;
+  --ls-widest:   0.18em;
+  --ls-editorial: 0.26em;
+
+  /* -------------------------------------------------------------------------
+     3. Spacing
+     ------------------------------------------------------------------------- */
+  --sp-3xs: 0.25rem;   /* 4px  */
+  --sp-2xs: 0.5rem;    /* 8px  */
+  --sp-xs:  0.75rem;   /* 12px */
+  --sp-sm:  1rem;      /* 16px */
+  --sp-md:  1.5rem;    /* 24px */
+  --sp-lg:  2rem;      /* 32px */
+  --sp-xl:  3rem;      /* 48px */
+  --sp-2xl: 4.5rem;    /* 72px */
+  --sp-3xl: 6rem;      /* 96px */
+  --sp-4xl: 9rem;      /* 144px */
+
+  /* -------------------------------------------------------------------------
+     4. Layout
+     ------------------------------------------------------------------------- */
+  --container-max:     1400px;
+  --container-narrow:  1060px;
+  --container-px:      clamp(1.25rem, 5vw, 4rem);
+  --section-py:        clamp(5rem, 9vw, 9rem);
+  --header-h:          72px;
+  --grid-gap:          clamp(0.9rem, 1.8vw, 1.75rem);
+
+  /* -------------------------------------------------------------------------
+     5. Border Radius
+     ------------------------------------------------------------------------- */
+  --r-none:   0px;
+  --r-xs:     4px;
+  --r-sm:     8px;
+  --r-md:     14px;
+  --r-lg:     22px;
+  --r-xl:     32px;
+  --r-card:   20px;
+  --r-pill:   9999px;
+
+  /* -------------------------------------------------------------------------
+     6. Motion
+     ------------------------------------------------------------------------- */
+  --dur-instant:    80ms;
+  --dur-fast:       180ms;
+  --dur-base:       320ms;
+  --dur-slow:       550ms;
+  --dur-deliberate: 900ms;
+  --dur-cinematic: 1400ms;
+
+  --ease-standard:  cubic-bezier(0.20, 0.00, 0.00, 1.00);
+  --ease-spring:    cubic-bezier(0.34, 1.56, 0.64, 1.00);
+  --ease-smooth:    cubic-bezier(0.16, 1.00, 0.30, 1.00);
+  --ease-in-expo:   cubic-bezier(0.95, 0.05, 0.80, 0.04);
+  --ease-out-expo:  cubic-bezier(0.19, 1.00, 0.22, 1.00);
+  --ease-in-out:    cubic-bezier(0.65, 0.00, 0.35, 1.00);
+
+  /* -------------------------------------------------------------------------
+     7. Z-index layers
+     ------------------------------------------------------------------------- */
+  --z-below:    -1;
+  --z-base:      1;
+  --z-overlay:  10;
+  --z-sticky:  100;
+  --z-header: 1000;
+  --z-drawer: 1100;
+  --z-modal:  2000;
+  --z-cursor: 9999;
+}
